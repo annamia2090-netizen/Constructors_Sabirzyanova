@@ -18,11 +18,13 @@ namespace Contructors_Sabirzyanova.Elements
     /// <summary>
     /// Логика взаимодействия для Student.xaml
     /// </summary>
-    public partial class Student : UserControl
-    {
-        public Student()
+    public partial class Student : UserControl {
+        public Student(Classes.Student student)
         {
             InitializeComponent();
+            tb_fio.Content = student.GetFIO();
+            tb_scholarship.Content = student.Scholarship ? "Степендия: получает" : "Степендия: не получает";
+            tb_course.Content = $"Kypc: {student.Course}";
         }
     }
 }
