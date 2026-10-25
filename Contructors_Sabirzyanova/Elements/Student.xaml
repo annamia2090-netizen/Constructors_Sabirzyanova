@@ -16,7 +16,7 @@
                Stretch = "UniformToFill" Source="/Images/ic_user.png"/>
         <Label x:Name="tb_fio" Content="Фамилия Имя Отчество" VerticalContentAlignment="Center"
                Margin="9.4,10,10.2,10" Grid.Column="1" Foreground="White" FontSize="14"/>
-        <Label x:Name="tb_scholarship" Content="Степендия: получает" VerticalContentAlignment="Center"
+        <Label x:Name="tb_scholarship" Content="Стипендия: получает" VerticalContentAlignment="Center"
                Margin="9.8,10" Grid.Column="2" Foreground= "White" FontSize="14"/>
         <Label x:Name="tb_course" Content="Kypc: 4" VerticalContentAlignment="Center" Margin="9.2,10,9.6,10"
                Grid.Column="3" Foreground= "White" FontSize="14"/>

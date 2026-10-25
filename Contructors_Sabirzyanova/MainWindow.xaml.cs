@@ -33,7 +33,11 @@ namespace Contructors_Sabirzyanova
         public void CreateStudent(int Step, int Count)
         {
             for (int iStudent = Step; iStudent < Step + Count; iStudent++)
-                this.Step += Count;
+            {
+                if (AllStudent.Count > iStudent)
+                    parent.Children.Add(new Elements.Student(AllStudent[iStudent]));
+            }
+            this.Step += Count;
         }
         private void ScrollViewer_ScrollChanged(object sender, ScrollChangedEventArgs e)
         {
@@ -41,9 +45,19 @@ namespace Contructors_Sabirzyanova
             double ParentHeight = parent.ActualHeight;
             double WindowHeight = scroll.ActualHeight - 20;
             double DeltaHeight = ParentHeight - WindowHeight;
-            if (DeltaHeight - scroll.VerticalOffset < 140) {
+            if (DeltaHeight - scroll.VerticalOffset < 140)
+            {
                 CreateStudent(Step, Count);
             }
+        }
+
+        private void Add_Click(object sender, RoutedEventArgs e)
+        {
+            var newStudent = new Classes.Student("Фунтик", "Николай", "Эдуардович", true, 1);
+            AllStudent.Add(newStudent);
+            parent.Children.Clear();
+            Step = 0;
+            CreateStudent(Step, Count);
         }
     }
 }

@@ -23,7 +23,7 @@ namespace Contructors_Sabirzyanova.Elements
         {
             InitializeComponent();
             tb_fio.Content = student.GetFIO();
-            tb_scholarship.Content = student.Scholarship ? "Степендия: получает" : "Степендия: не получает";
+            tb_scholarship.Content = student.Scholarship ? "Стипендия: получает" : "Стипендия: не получает";
             tb_course.Content = $"Kypc: {student.Course}";
         }
     }
