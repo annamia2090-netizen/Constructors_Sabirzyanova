@@ -33,6 +33,11 @@ namespace Contructors_Sabirzyanova.Elements
                     grid.Background = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Colors.Green);
                 }
             }
+            try
+            {
+                avatar.Source = new System.Windows.Media.Imaging.BitmapImage(new Uri(student.ImagePath, UriKind.RelativeOrAbsolute));
+            }
+            catch { }
         }
     }
 }

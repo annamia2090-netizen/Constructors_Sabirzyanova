@@ -12,7 +12,7 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Image Height="30" VerticalAlignment="Top" Margin="10,10,0,0" HorizontalAlignment="Left" Width="30"
+        <Image x:Name="avatar" Height="30" VerticalAlignment="Top" Margin="10,10,0,0" HorizontalAlignment="Left" Width="30"
                Stretch = "UniformToFill" Source="/Images/ic_user.png"/>
         <Label x:Name="tb_fio" Content="Фамилия Имя Отчество" VerticalContentAlignment="Center"
                Margin="9.4,10,10.2,10" Grid.Column="1" Foreground="White" FontSize="14"/>

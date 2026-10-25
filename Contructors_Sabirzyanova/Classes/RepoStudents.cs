@@ -13,7 +13,7 @@ namespace Contructors_Sabirzyanova.Classes
             List<Student> allStudent = new List<Student>();
             allStudent.Add(new Student("Болотов", "Евгений", "Олегович"));
             allStudent.Add(new Student("Григорьев", "Роман", "Владимирович"));
-            allStudent.Add(new Student("Гудков", "Георгий", "Константинович", false, 3));
+            allStudent.Add(new Student("Гудков", "Георгий", "Константинович", false, 3, "/Images/avatar2.png"));
             allStudent.Add(new Student("Исыпова", "Алёна", "Александровна", true));
             allStudent.Add(new Student("Иутин", "Павел", "Алексеевич", false, 3));
             allStudent.Add(new Student("Ишимов", "Виктор", "Алексеевич"));

@@ -15,6 +15,7 @@ namespace Contructors_Sabirzyanova.Classes
         public string Surname = "";
         public bool Scholarship = false;
         public int Course = 4;
+        public string ImagePath = "/Images/ic_user.png";
         public Student(string Firstname, string Lastname, string Surname)
         {
             this.Firstname = Firstname;
@@ -30,6 +31,11 @@ namespace Contructors_Sabirzyanova.Classes
             : this(Firstname, Lastname, Surname, Scolarship)
         {
             this.Course = Course;
+        }
+        public Student(string Firstname, string Lastname, string Surname, bool Scholarship, int Course, string ImagePath)
+            : this(Firstname, Lastname, Surname, Scholarship, Course)
+        {
+            this.ImagePath = ImagePath;
         }
         public string GetFIO()
         {
