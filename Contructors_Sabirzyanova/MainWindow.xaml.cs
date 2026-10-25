@@ -70,5 +70,16 @@ namespace Contructors_Sabirzyanova
                 CreateStudent(Step, Count);
             }
         }
+
+        private void Delete_Click(object sender, RoutedEventArgs e)
+        {
+            if (AllStudent.Count > 0)
+            {
+                AllStudent.RemoveAt(AllStudent.Count - 1);
+                parent.Children.Clear();
+                Step = 0;
+                CreateStudent(Step, Count);
+            }
+        }
     }
 }
