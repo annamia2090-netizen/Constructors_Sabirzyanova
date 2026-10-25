@@ -25,6 +25,14 @@ namespace Contructors_Sabirzyanova.Elements
             tb_fio.Content = student.GetFIO();
             tb_scholarship.Content = student.Scholarship ? "Стипендия: получает" : "Стипендия: не получает";
             tb_course.Content = $"Kypc: {student.Course}";
+            if (student.Scholarship)
+            {
+                var grid = this.Content as Grid;
+                if (grid != null)
+                {
+                    grid.Background = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Colors.Green);
+                }
+            }
         }
     }
 }
