@@ -11,6 +11,7 @@
             <Button Content="Добавить студента" Click="Add_Click" Height="30" Width="130" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="18,0,0,0"/>
             <Button Content="Изменить запись" Click="Edit_Click" Height="30" Width="110" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="181,0,0,0"/>
             <Button Content="Удалить запись" Click="Delete_Click" Height="30" Width="100" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="326,0,0,0"/>
+            <Button Content="Сортировать по ФИО" Click="Sort_Click" Height="30" Width="128" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="463,0,0,0"/>
 
         </Grid>
         <ScrollViewer ScrollChanged="ScrollViewer_ScrollChanged" Margin="0,80,0,0">

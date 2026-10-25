@@ -81,5 +81,13 @@ namespace Contructors_Sabirzyanova
                 CreateStudent(Step, Count);
             }
         }
+
+        private void Sort_Click(object sender, RoutedEventArgs e)
+        {
+            AllStudent.Sort((x, y) => x.Firstname.CompareTo(y.Firstname));
+            parent.Children.Clear();
+            Step = 0;
+            CreateStudent(Step, Count);
+        }
     }
 }
