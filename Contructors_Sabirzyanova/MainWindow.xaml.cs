@@ -59,5 +59,16 @@ namespace Contructors_Sabirzyanova
             Step = 0;
             CreateStudent(Step, Count);
         }
+
+        private void Edit_Click(object sender, RoutedEventArgs e)
+        {
+            if (AllStudent.Count > 0)
+            {
+                AllStudent[0].Firstname = "Шевченко";
+                parent.Children.Clear();
+                Step = 0;
+                CreateStudent(Step, Count);
+            }
+        }
     }
 }
