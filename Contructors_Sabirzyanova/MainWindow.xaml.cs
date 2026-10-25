@@ -89,5 +89,25 @@ namespace Contructors_Sabirzyanova
             Step = 0;
             CreateStudent(Step, Count);
         }
+
+        private void Save_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                using (System.IO.StreamWriter writer = new System.IO.StreamWriter("Студенты.txt", false, System.Text.Encoding.UTF8))
+                {
+                    foreach (var student in AllStudent)
+                    {
+                        string scholarshipText = student.Scholarship ? "Получает стипендию" : "Нет стипендии";
+                        writer.WriteLine($"{student.Firstname};{student.Lastname};{student.Surname};{scholarshipText};{student.Course}");
+                    }
+                }
+                MessageBox.Show("Данные сохранены в файл Студенты.txt");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка: {ex.Message}");
+            }
+        }
     }
 }
